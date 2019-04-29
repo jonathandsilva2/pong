@@ -87,7 +87,7 @@ export default class Game {
   })
 
   if (this.player1.score == 1) {
-    console.log ('LOL2')
+   
   }
   
   }
@@ -118,7 +118,7 @@ export default class Game {
  
  this.score1.render(svg, this.player1.score);
  this.score2.render(svg, this.player2.score);
-if (this.ball2 !== undefined) {
+  if (this.ball2 !== undefined) {
   this.ball2.render(svg, this.player1, this.player2)
 }
 }

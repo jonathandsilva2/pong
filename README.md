@@ -25,3 +25,9 @@ A basic pong game using SVGs.
 **Player 2:**
 * ▲ : up
 * ▼: down
+
+
+My additional functionality is as follows
+
+1. pressing the P button at anytime will summon a 2nd ball
+2. pressing the N key at anytime will start a new game
