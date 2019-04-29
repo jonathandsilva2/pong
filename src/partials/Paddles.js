@@ -15,16 +15,27 @@ export default class Paddle {
         
         switch(event.key) {
               case up: 
-              this.y = (this.y - this.speed)
-              console.log('up')
+              this.y = Math.max(0,this.y - this.speed)
+          
               break;
               case down:
-              this.y = (this.y + this.speed)
-              console.log('down')
+              this.y = Math.min(this.boardHeight - this.height, this.y + this.speed)
+             
                 break; 
           }
       });
     }
+    coordinates(x, y, width, height) {
+      let leftX = x;
+      let rightX = x + width;
+      let topY = y;
+      let bottomY = y + height;
+      return [leftX, rightX, topY, bottomY]
+    }
+    
+    
+    
+    
     render(svg) {
         let rect = document.createElementNS(SVG_NS, 'rect');
         rect.setAttributeNS(null, 'fill', 'white');
@@ -34,5 +45,5 @@ export default class Paddle {
         rect.setAttributeNS(null, 'y', this.y)
         svg.appendChild(rect)
     }
-    }
-  
+    
+  }
