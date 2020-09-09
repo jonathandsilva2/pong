@@ -7,9 +7,9 @@ import { SVG_NS } from '../settings';
 export default class Ball {
   /**
    * @constructor
-   * @param {number} Radius of the ball instance
-   * @param {*} Width of the board instance
-   * @param {*} Height of the board instance
+   * @param {number} radius - Radius of the ball instance
+   * @param {number} boardWidth - Width of the board instancnum
+   * @param {number} boardHeight - Height of the board instance
    */
   constructor(radius, boardWidth, boardHeight) {
     this.radius = radius;
@@ -38,6 +38,8 @@ export default class Ball {
   /**
    * @function
    * @name paddleCollision
+   * @param {Paddle} player1 - A player 1 Paddle class
+   * @param {Paddle} player2 - A player 2 Paddle class
    * Handles logic for when ball touches a paddle.
    */
   paddleCollision(player1, player2) {

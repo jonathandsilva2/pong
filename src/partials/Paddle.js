@@ -7,13 +7,13 @@ import { SVG_NS } from '../settings';
 export default class Paddle {
   /**
    * @constructor
-   * @param {number} Height of the board
-   * @param {number} Width of the paddle
-   * @param {number} Height of the paddle
-   * @param {number} Position of paddle on the board along the X-axis
-   * @param {number} Position of paddle on the board along the Y-axis
-   * @param {string} Keystroke as a string for the up movement
-   * @param {string} Keystroke as a string for the down movement
+   * @param {number} boardHeight - Height of the board.
+   * @param {number} width - Width of the paddle.
+   * @param {number} height - Height of the paddle.
+   * @param {number} x - Position of paddle on the board along the X-axis.
+   * @param {number} y - Position of paddle on the board along the Y-axis.
+   * @param {string} up - Keystroke as a string for the up movement.
+   * @param {string} down - Keystroke as a string for the down movement.
    */
   constructor(boardHeight, width, height, x, y, up, down) {
     this.boardHeight = boardHeight;
@@ -48,7 +48,7 @@ export default class Paddle {
    * @param {number} Initial starting point of the paddle along the y-axis of the board.
    * @param {number} Width of the paddle.
    * @param {number} Height of the paddle.
-   * @returns {[...coordinates]} An array of the coordinates of the four corners of the paddle.
+   * @return {[coordinates]} An array of the coordinates of the four corners of the paddle.
    */
   coordinates(x, y, width, height) {
     let leftX = x;

@@ -11,9 +11,9 @@ import Score from './Score';
 export default class Game {
   /**
    * @constructor
-   * @param {HTMLElement} HTML element targetted to render the game.
-   * @param {number} Width of the game instance
-   * @param {number} Height of the game instance
+   * @param {HTMLElement} element - HTML element targetted to render the game.
+   * @param {number} width - Width of the game instance
+   * @param {number} height - Height of the game instance
    */
   constructor(element, width, height) {
     this.element = element;
