@@ -64,19 +64,20 @@ export default class Game {
     document.addEventListener('keydown', (event) => {
       switch (event.key) {
         // Adds pause functionality
-        case KEYS.spaceBar:
+        case KEYS.spaceBar: {
           this.pause = !this.pause;
           this.player1.speed = 10;
           this.player2.speed = 10;
           break;
-
+        }
         //Adds new game functionality
-        case KEYS.n:
+        case KEYS.n: {
           const game = new Game('game', 512, 256);
           (function gameLoop() {
             game.render();
             requestAnimationFrame(gameLoop);
           })();
+        }
       }
     });
   }
