@@ -1,6 +1,8 @@
 # Pong Game
 
-A basic pong game using SVGs.
+A basic pong game using SVGs. 
+View live [here](https://jonathan-pong.netlify.app/)
+
 
 ## Setup
 
@@ -26,8 +28,3 @@ A basic pong game using SVGs.
 * ▲ : up
 * ▼: down
 
-
-My additional functionality is as follows
-
-1. pressing the P button at anytime will summon a 2nd ball
-2. pressing the N key at anytime will start a new game
