@@ -3,6 +3,12 @@
 A basic pong game using SVGs. 
 View live [here](https://jonathan-pong.netlify.app/)
 
+## Built using
+
+* Pure [Javascript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+
+
+
 
 ## Setup
 
